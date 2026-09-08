@@ -1,0 +1,500 @@
+	/* Matomo */
+
+/*	var _paq = window._paq = window._paq || [];
+	   tracker methods like "setCustomDimension" should be called before "trackPageView" 
+	  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+	  _paq.push(['trackPageView']);
+	  _paq.push(['enableLinkTracking']);
+	  (function() {
+	    var u="https://useranalytics1.trade.gov.in/";
+	    _paq.push(['setTrackerUrl', u+'matomo.php']);
+	    _paq.push(['setSiteId', '1']);
+	    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+	    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+	  })();
+	*/
+
+
+
+/* Matomo */
+function matomo(){
+var _paq = window._paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="https://useranalytics.trade.gov.in/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '1']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+}
+function sourceFromIndiaBreadcrumb(){
+	$('title').html('Source from India');
+	$('.template-title').html('Source from India');
+	$('.template-desc').html('Discover the best of Indian manufacturing, innovation, and craftsmanship. Source from India is your trusted gateway to sourcing quality products directly from Indian exporters.<a href="https://www.youtube.com/watch?v=KdDz_NIq24s" target="_blank">&nbsp;<u class="text-white font-16">Learn how to create your profile</u></a>');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Exporter_showcase_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function productGuideBreadcrumb(){
+	$('title').html('Product Guide');
+	$('.template-title').html('Product Guide');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Product_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').html('Access product-specific intelligence on global demand, certifications, buyer requirements, and new market opportunities through the Product Guide');
+	matomo();
+}
+
+function eximPaathshaalaBreadcrumb(){
+	$('title').html('EXIM Paathshaala');
+	$('.template-title').html('EXIM Paathshaala');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/exim_paathshaala.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').html('Learn how to export from India to the world with EXIM Paathshaala, your gateway to training, knowledge and certification related to trade!');
+	matomo();
+}
+
+function cmsNewsLetterBreadcrumb(){
+	$('title').html('Content Management System');
+	$('.template-title').html('Content Management System');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/exim_paathshaala.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').html('Manage Content on the Trade Connect Portal.');
+	matomo();
+}
+
+function eximDetailsScreenBreadcrumb(){
+	$('title').html('EXIM Paathsaala');
+	$('.template-title').html($("#courseName").html());
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/exim_paathshaala.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').html($("#courseDescription").html());
+	var eximLongDesc = '<div class="text-white">'+$("#courseDescriptionLong").html()+'</div>';
+    $(eximLongDesc).insertAfter(".template-desc");
+    var checkmydata ='<h4 class="trade-headercustom-title my-3">What you’ll learn</h4>';
+    $(checkmydata).insertBefore('.template-desc');
+    matomo();
+}
+
+function cooBreadcrumb(){
+	$('title').html('Certificate of Origin');
+	$('.template-title').html('Certificate of Origin');
+	$('.template-desc').html('Certificate of Origin establishes the origin of products and provides duty and origin related benefits under various trade agreements. Trade Connect brings all CoO issuance on a single platform.');
+	
+	var bannerImg = 'https://content.trade.gov.in/module_icon/coo/banner/Certificate-of-Origin.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function askAnExpertBreadcrumb(){
+	$('title').html('TCP | Ask an Expert');
+	$('.template-title').html('Ask an expert');
+	$('.template-desc').html('Submit your trade-related queries and get them answered by officials & trade experts!');
+	
+	var bannerImg = 'https://content.trade.gov.in/module_icon/ask-an-expert/banner/Ask-an-expert.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function tradeEventBreadcrumb(){
+	$('title').html('Trade Event');
+	$('.template-title').html('Trade Events Worldwide');
+	$('.template-desc').html('Stay updated on upcoming trade fairs, exhibitions, and business events in India and worldwide: opportunities that could connect you with interested buyers for your industry and products!');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Trade_Events_Banner.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function ftaBreadcrumb(){
+	$('title').html('Tariff Explorer');
+	$('.template-title').html('Tariff Explorer');
+//	$('.template-desc').html('Explore opportunities created by agreements signed by India with various countries and country groups to expand and diversify trade.');
+	//<p class="itc-powered-icon">Supported By</p><img class="itc-img-section" src="https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/TCP_COMMON_LOGO/ITC-logo.png" alt="ITC LOGO" /></div>
+	$('.template-desc').html('<div class="itc-main-section"><div class="itc-content-div"><p class="mb-0">Access complete tariff schedules of all major economies and preferential duty rates for India available under India’s trade agreements with partner countries, regional groups and blocs.</p></div><div><p class="itc-powered-icon">Supported By</p><img class="itc-img-section" src="https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/TCP_COMMON_LOGO/ITC-logo.png" alt="ITC LOGO" /></div></div>');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Trade_Agreements_and_Tariff_Explorer.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function eCommerceBreadcrumb(){
+	$('title').html('ECommerce');
+	$('.template-title').html('Global E-commerce Guide');
+	$('.template-desc').html('Unlock global e-commerce opportunities by exploring online marketplaces to export your products to consumers around the world. Find the leading cross-border platforms for your products!');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/exim_paathshaala.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function countryGuideBreadcrumb(){
+	$('title').html('Country Guide');
+	$('.template-title').html('Country Guide');
+	$('.template-desc').html('Gain market intelligence on tariffs, standards, export opportunities and competent authorities for Indian exports across key countries through the Country Guide');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Country_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+	  
+function HSNFinderBreadcrumb(){
+	$('title').html('HSN Finder');
+	$('.template-title').html('HSN Finder');
+	$('.template-desc').html('Guide to identify HSN code applicable to your product in over 100 markets worldwide.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Product_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function qcoBreadcrumb(){
+	$('title').html('Quality Control Orders');
+	$('.template-title').html('Quality Control Orders');
+	$('.template-desc').html('Access information on Quality Control Orders to ensure your products meet mandatory standards and regulations for importing into India.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Product_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function tradeAdvisoryBreadcrumb(){
+	$('title').html('Trade Advisory and Trade Updates Management Module');
+	$('.template-title').html('Trade Advisory and Trade Updates Management Module');
+	$('.template-desc').html('Publish Trade Advisories and Trade Updates for consumption of Indian industry on Trade Connect ePlatform. Published advisories/updates will be available in the "Country Guide" service for public viewing.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Product_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function eximPaathshaalaMngtBreadcrumb(){
+	$('title').html('EXIM Paathshaala Management');
+	$('.template-title').html('EXIM Paathshaala Management');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/exim_paathshaala.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').html('Manage EXIM Paathshaala Categories and Courses here.');
+	matomo();
+}
+
+function gtaBreadcrumb(){
+	$('title').html('Global Trade Analytics');
+	$('.template-title').html('Global Trade Analytics');
+	$('.template-desc').html('<div class="itc-main-section"><div class="itc-content-div"><p class="mb-0 font-weight-bold">Access detailed trade statistics to drive export growth.</p><p class="mb-0">Track import/export trends, market shares, growth rates, and performance indicators across 220+ countries and 5,300 products.</div><div><p class="itc-powered-icon">Powered By</p><img class="itc-img-section" src="https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/TCP_COMMON_LOGO/ITC-logo.png" alt="ITC LOGO" /></div></div>');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Trade_Events_Banner.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+
+function labBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu');
+	$('.template-title').html('Bharat Aayat Niryat LabSetu');
+	$('.template-desc').html('Online Bharat Aayat Niryat LabSetu will enable online filing and tracking of applications.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+ 
+function labesPageBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu');
+	$('.template-title').html('Bharat Aayat Niryat LabSetu');
+	$('.template-desc').html('Online Bharat Aayat Niryat LabSetu will enable online filing and tracking of applications.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+
+function expRefLabTestingPageBreadcrumb(){
+	$('title').html('Trade Regulations, Accreditation & Compliance Enablement (TRACE)');
+	$('.template-title').html('Trade Regulations, Accreditation & Compliance Enablement (TRACE)');
+	$('.template-desc').html('The initiative facilitates support to MSMEs to meet internationally recognised quality, safety, and technical requirements arising from compliance and quality-related certificates and other mandatory or voluntary conformity-assessment requirements applicable in overseas markets.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+	/*var checksetumenu = $('.dynamic-text-breadcrumb').html();
+	if(checksetumenu == 'Labsetu'){
+	    alert('check');
+	}else{
+	    alert('not check');
+	}*/
+	
+}
+
+function findBuyersBreadcrumb(){
+	$('title').html('Buyer Connect');
+	$('.template-title').html('Buyer Connect');
+	$('.template-desc').html('<div class="itc-main-section"><div class="itc-content-div"><p class="mb-0 ">Connect, engage and grow your business with global buyers and new market opportunities!</p> </div> </div>');
+	var bannerImg = 'https://content.trade.gov.in/lab/Background_image.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+
+function labesManagementBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Labs Master Data Management');
+	$('.template-title').html('Labs Master Data Management');
+	$('.template-desc').html('Manage Lab master data, Licensing details, and GST - compliant fee & receipt configuration.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesUserManagementBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Labs Master Data Management');
+	$('.template-title').html('Labs Master Data Management');
+	$('.template-desc').html('Manage Lab master data, Licensing details, and GST - compliant fee & receipt configuration.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesUserManagementBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | User Management');
+	$('.template-title').html('User Management');
+	$('.template-desc').html('Efficiently manage lab users, roles, and activity tracking within a secure and scalable environment.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesBranchManagementBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Branch Management');
+	$('.template-title').html('Branch Management');
+	$('.template-desc').html('Seamlessly monitor, manage, and update branch details and operational status.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labestestandfeeBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Test and Fee Configuration');
+	$('.template-title').html('Test and Fee Configuration');
+	$('.template-desc').html('Easily configure, view, and manage lab test details and associated fees.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesmappingtestBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Mapping of Tests with Labs');
+	$('.template-title').html('Test and Fee Configration');
+	$('.template-desc').html('Map lab tests to designated branches for precise service control and accurate test availability.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesviewLabandTestBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | View Labs and Tests');
+	$('.template-title').html('View Labs and Tests');
+	$('.template-desc').html('Quickly access lab details and associated tests for streamlined oversight.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+function labesprocessSubmittedBreadcrumb(){
+	$('title').html('Bharat Aayat Niryat LabSetu | Process Submitted Applications');
+	$('.template-title').html('Process Submitted Applications');
+	$('.template-desc').html('Filter, track, and manage lab applications for faster and smarter processing.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+
+function maiSearchPageBreadcrumb(){
+	$('title').html('Market Access Initiative (MAI)');
+	$('.template-title').html('Market Access Initiative (MAI)');
+	$('.template-desc').html('The MAI Scheme promotes India exports by supporting market development by participation in <br/>organisation of global events.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Labs_landing_page_img.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	$('.template-desc').css({width: "100%"});
+	matomo();
+}
+
+function commonUserGuideBreadcrumb(){
+	$('title').html('User Guide');
+	$('.template-title').html('User Guide');
+	$('.template-desc').html('This section displays the user guide for IMA users for different services on Trade Connect ePlatform.');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Product_guide_img.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function maiBreadcrumb(){
+	$('title').html('Market Access Support');
+	$('.template-title').html('Market Access Support');
+	$('.template-desc').html('<p class="mb-0">The Market Access Support is a targeted and outcome-oriented programme to enhance export competitiveness of Indian exporters. It provides financial support for a defined set of market-development activities, including participation in international fairs and Buyer Seller Meets (BSM), conducting Reverse Buyer Seller Meets (RBSM). It also supports focused trade delegations, and proof-of-concept demonstrations in priority and emerging markets. The initiative leverages a digital workflow for improving transparency and ensuring evidence-based decision making.</p><p class="mb-0">Eligible organisations and valid IEC holders can apply for support under the Market Access Support on Trade Connect ePlatform.</p>');
+	$('.template-desc').addClass('w-100');
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function epmBreadcrumb(){
+	$('title').html('Export Promotion Mission');
+	$('.template-title').html('Export Promotion Mission');
+	$('.template-desc').html('Empowering Exporter. Expanding Markets. Driving Growth');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/EPM.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function aboutTradeConnectePLatformBreadcrumb(){
+	$('title').html('About Trade Connect ePlatform');
+	$('.template-title').html('');
+	$('.template-desc').html('');
+	var bannerImg = 'https://content.trade.gov.in/About-TCP/About-Trade-connect-eplatform.webp';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 0), rgba(48, 50, 100, 0), rgba(170, 174, 199, .0)) fixed, url(" + bannerImg + ")"});
+	$('.template-head-section').css({'height':'31rem','background-size':'100%','background-repeat':'no-repeat','background-position':'top'});
+	matomo();
+}
+
+function aboutDGFTBreadcrumb(){
+	$('title').html('About DGFT and DoC');
+	$('.template-title').html('About DGFT and Department of Commerce');
+	$('.template-desc').html('About DGFT and Department of Commerce');
+	
+	var bannerImg = '';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function bankDarpanDetailsBreadcrumb(){
+	$('title').html('Enter Bank Details and Darpan ID');
+	$('.template-title').html('Enter Bank Details and Darpan ID');
+	$('.template-desc').html('Enabling the Darpan ID and Bank Account details for organisations to enable secure payments and compliance verification.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+
+function InterestExportCreditBreadcrumb(){
+	$('title').html('Interest Subvention Support for Pre-and Post-Shipment Export Credit');
+	$('.template-title').html('Interest Subvention Support for Pre-and Post-Shipment Export Credit');
+	$('.template-desc').html('The initiative facilitates improved access to pre- and post-shipment rupee export credit for MSME exporters by reducing the cost of such credit.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function CollatrealSupportCreditBreadcrumb(){
+	$('title').html('Collatreal Support for Export Credit');
+	$('.template-title').html('Collatreal Support for Export Credit');
+	$('.template-desc').html('The initiative facilitates access to formal credit for MSME exporters, especially those lacking sufficient collateral, by providing credit guarantee support.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function SupportAlternativeTradeInstrumentsBreadcrumb(){
+	$('title').html('Support for Alternative Trade Instruments');
+	$('.template-title').html('Support for Alternative Trade Instruments');
+	$('.template-desc').html('The initiative facilitates access to formal credit for MSME exporters, especially those lacking sufficient collateral, by providing credit guarantee support.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function CreditAssistanceExporterBreadcrumb(){
+	$('title').html('Credit Assistance for E-Commrece Exporters');
+	$('.template-title').html('Credit Assistance for E-Commrece Exporters');
+	$('.template-desc').html('The initiative facilitates access to working capital for MSMEs, involved in international value chains through e-commerce allowing them to procure goods ahead of anticipated demand and scale their presence in international markets.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function SupportEmergingExpoerOppBreadcrumb(){
+	$('title').html('Support for Emerging Export Opportunities');
+	$('.template-title').html('Support for Emerging Export Opportunities');
+	$('.template-desc').html('The initiative enhanced global trade connectivity and liquidity in underserved markets by increasing confidence of counterparties in settlement of trade transactions.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function MASBreadcrumb(){
+	$('title').html('Market Access Support (MAS)');
+	$('.template-title').html('Market Access Support (MAS)');
+	$('.template-desc').html('Enhancing the competitiveness of Indian exporters by supporting participation in international events and organisation of trade shows in India.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function TRACEBreadcrumb(){
+	$('title').html('Trade Regulations, Accredition & Compliance Enablement (TRACE)');
+	$('.template-title').html('Trade Regulations, Accredition & Compliance Enablement (TRACE)');
+	$('.template-desc').html('The initiative facilitates support to MSMEs to meet internationally recognised quality, safety, and technical requirements arising from compliance and quality-related certificates and other mandatory or voluntary conformity-assessment requirements applicable in overseas markets.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function LIFTBreadcrumb(){
+	$('title').html('Logostics Interventions for Freight & Transport (LIFT)');
+	$('.template-title').html('Logostics Interventions for Freight & Transport (LIFT)');
+	$('.template-desc').html('The initiative facilitates support to MSMEs (involved in international value chains) equitable access to export opportunities by mitigating geographical disadvantages and addressing regional logistics gaps faced while operating from hinterland areas.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function INSIGHTBreadcrumb(){
+	$('title').html('Inregrated Support for Trade Intelligence & Facilitation (INSIGHT)');
+	$('.template-title').html('Inregrated Support for Trade Intelligence & Facilitation (INSIGHT)');
+	$('.template-desc').html('The initiative facilitates exporter preparedness and export-support ecosystems by addressing information asymmetries, procedural frictions, and institutional capacity gaps faced by exporters and export-support entities, with particular emphasis on Micro, Small and Medium Enterprises (MSMEs).');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function FLOWBreadcrumb(){
+	$('title').html('Facilitating Logistics, Overseas Warehousing & Fulfilment (FLOW)');
+	$('.template-title').html('Facilitating Logistics, Overseas Warehousing & Fulfilment (FLOW)');
+	$('.template-desc').html('The initiative facilitates mitigation of logistics-related constraints faced by MSMEs in accessing overseas markets, including limitations relating to overseas storage, distribution, fulfilment and customer service infrastructure.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function tradeEventManagementBreadcrumb(){
+	$('title').html('Trade Event Management');
+	$('.template-title').html('Trade Event Management');
+	$('.template-desc').html('Stay updated on upcoming trade fairs, exhibitions, and business events in India and worldwide: opportunities that could connect you with interested buyers for your industry and products! </br>Agencies can add / view / modify event details from here.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/Trade_Events_Banner.png';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function ExportWalletBreadcrumb(){
+	$('title').html('Exporter Wallet');
+	$('.template-title').html('Exporter Wallet');
+	$('.template-desc').html("Exporter's Wallet is a unified export incentive tracking dashboard that integrates various DGFT schemes availed by an exporter, enabling seamless tracking and monitoring.");
+
+	var bannerImg = '';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function GLOBALbreadcrumb(){
+	$('title').html('Global Outreach for Branding, Labelling and Export Packaging (GLOBE)');
+	$('.template-title').html('Global Outreach for Branding, Labelling and Export Packaging (GLOBE)');
+	$('.template-desc').html('The intervention seeks to strengthen ‘Unified Indian Brand’ in global markets by establishing a coordinated National Brand India Framework with a multi-tier Trust Mark certification system to enhance global brand identity and positioning for Indian products and services transforming India from a commodity exporter to brand exporter and strengthening India’s soft power in international trade. The initiative will be implemented through periodical identification of priority sectors, product categories, or markets.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
+function NTBbreadcrumb(){
+	$('title').html('Non-Tariff Barriers');
+	$('.template-title').html('Non-Tariff Barriers');
+	$('.template-desc').html('Non-Tariff Barrier module is a targeted initiative to support Indian exporters in addressing non-tariff barriers in foreign markets and enhancing market access opportunities. It provides a platform for exporters to report non-tariff barriers, enabling swift government intervention, improved market access, and data-driven trade facilitation.');
+	
+	var bannerImg = 'https://content.trade.gov.in/TCP_LANDING_PAGE_IMG/MAI_BG.jpg';
+	$('.template-head-section').css({background: "linear-gradient(124deg, rgba(21, 29, 76, 1), rgba(48, 50, 100, 1), rgba(170, 174, 199, .4)) fixed, url(" + bannerImg + ")"});
+	matomo();
+}
